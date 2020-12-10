@@ -34,11 +34,6 @@ RUN apt-get update && \
 RUN apt-get clean && apt-get update && apt-get install -y locales
 RUN locale-gen en_US.UTF-8
 
-# ENV \
-#   LANG=en_US.UTF-8 \
-#   DEBIAN_FRONTEND=noninteractive \
-#   TERM=xterm
-
 # Setup your sources.list
 RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
