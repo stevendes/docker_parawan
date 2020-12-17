@@ -13,19 +13,10 @@ RUN echo 'Etc/UTC' > /etc/timezone && \
 # Setup environment
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-    apt-utils \
     bash-completion \
-    build-essential \
-    curl \
     dirmngr \
-    gpg-agent \
     gnupg2 \
     lsb-core \
-    mesa-utils \
-    pkg-config \
-    python-vcstools \
-    python-pip \
-    software-properties-common \
     ssh \
     sudo \
     tmux
@@ -52,6 +43,8 @@ RUN apt-get update && \
     python-rosdep \
     python-rosinstall \
     python-rosinstall-generator \
+    python-pip \
+    python-vcstools \
     python-wstool \
     build-essential
 
